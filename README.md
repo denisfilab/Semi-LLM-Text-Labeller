@@ -17,7 +17,7 @@ A full-stack application for semi-automated text labeling using Large Language M
 - Python 3.10+
 - Node.js 18+
 - npm or yarn
-- PostgreSQL database
+- SQLite database
 
 ## Quick Start
 
@@ -60,30 +60,3 @@ npm run dev
 The application will be available at:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
-
-## Features
-
-- Semi-automated text labeling using LLMs
-- Real-time labeling progress tracking
-- Interactive labeling interface
-- Data export and analytics
-- Model performance metrics
-- Batch processing capabilities
-
-## Documentation
-
-- Backend API documentation is available at `/docs` when the server is running
-- Detailed setup instructions are available in the respective README files in the `app/` and `frontend/` directories
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details 

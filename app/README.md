@@ -11,7 +11,7 @@ The backend service for the Semi LLM Text Labeller project, built with FastAPI a
 ├── crud/             # Database operations
 ├── models/           # Database models and Pydantic schemas
 ├── services/         # Business logic and core services
-├── logs/            # Application logs
+├── logss/            # Application logs
 ├── pipeline_results/ # Processing results
 └── uploads/         # Temporary file storage
 ```
@@ -46,9 +46,6 @@ uvicorn main:app --reload --port 8000
 
 ## API Documentation
 
-
-## Core Components
-
 ### Services
 - `labeling.py`: Text labeling logic using LLMs
 - `embeddings.py`: Text embedding generation
@@ -56,24 +53,3 @@ uvicorn main:app --reload --port 8000
 - `pipeline.py`: Data processing pipeline
 - `progress.py`: Progress tracking
 
-### Background Tasks
-- Task queue management
-- Asynchronous processing
-- Progress monitoring
-
-### Database Models
-- Text entries
-- Labels
-- Processing results
-- User configurations
-
-## Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| OPENAI_API_KEY | OpenAI API key | - |
-
-
-## Error Handling
-
-Logs are stored in `logs/app.log`. The logging level can be configured in the `.env` file.
