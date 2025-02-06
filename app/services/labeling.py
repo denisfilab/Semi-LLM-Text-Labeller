@@ -122,7 +122,6 @@ class LabelingService:
                     batch_index += 1
                 except Exception as e:
                     print(f"Batch failed: {str(e)}")
-                    # Append a failure marker for this batch (could also decide to handle this differently)
                     failed_count = len(text_batches[batch_index])
                     all_labels.extend([None] * failed_count)
                     batch_index += 1

@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { CostEstimateModal } from "@/components/CostEstimateModal";
 import { PipelineProgress } from "@/components/PipelineProgress";
+import { ToastProvider } from "@/components/toast";
 
 interface CsvRow {
   id: number;
@@ -612,6 +613,7 @@ export default function HomePage() {
 
   return (
     <div className="h-[130vh] bg-background">
+      <ToastProvider />
 
       <CostEstimateModal
         isOpen={showCostModal}
